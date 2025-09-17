@@ -1,0 +1,20 @@
+function calculator(a, b, operator) {
+    switch (operator) {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return b !== 0 ? a / b : 'Error: Division by zero';
+        default:
+            return 'Error: Invalid operator';
+    }
+}
+
+// Example usage:
+console.log(calculator(5, 3, '+')); // 8
+console.log(calculator(5, 3, '-')); // 2
+console.log(calculator(5, 3, '*')); // 15
+console.log(calculator(5, 3, '/')); // 1.666...
